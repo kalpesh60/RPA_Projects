@@ -1,0 +1,152 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_To_Bookswagon" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="847.333333333333,1212.66666666667" sap2010:WorkflowViewState.IdRef="Login_To_Bookswagon_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="570,1148" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Login_To_Bookswagon" sap:VirtualizedContainerService.HintSize="528,1056" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="https://www.bookswagon.com/login" Name="URL" />
+        <Variable x:TypeArguments="x:String" Default="browser" Name="text" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="486,964" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="f9204207-78c9-4152-a2b1-51bad0c9765a" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,669.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="LoginDT" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReadRange AddHeaders="True" DataTable="[LoginDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="410,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\kalpe\Downloads\BookswagonCredentials.xlsx">
+                <ui:ReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ReadRange.Range>
+              </ui:ReadRange>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[LoginDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,448" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,324.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[CurrentRow(&quot;username&quot;).ToString]" Version="V1" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 1020, 1920, 60" Arguments="[text]" FilePath="https://www.bookswagon.com/login" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAW4SURBVGhD7ZjdT5N3HMW5383+hF1t00Xnu8I0IiClCCJQeXeaLduyZUt2s8tdLNnMsrjp3sy2LNnFLpbsblEEKoLQQqGltLxLVERLcSi0CkhbKc/Z9zz8OpWnlSiUSNKTnPBYzu+cz+/BcEFaSimllFJKq6bRP9KOiINirMCnxS+ryrWVDK8UPmaPeIuqXTstgVip+TJOqOq10cjvaVgt/3shHQujp4AbX6yOR78C/L8FMVWXqXCNGj6bhtVwsP0dGf0SGP5k9X3rdFDhGjVwJg3P66GfX8LoX5sQGjoJXP1Mxj5OjtkNxP8lgZHPsWIPf5R0K1yjcOVDrAcrXKNw5QMJvPhWuEZh6H2sBytcozD0ngRefCtcozD4LtaDFa5RGJTf3+vACtcoDJ6QwDIeeNLaCr20L+7mEitcozBwXEqM1vrf1r1A9z1yVPexlbn32KNOtRHbi8dCK1yjMHBMAo+s9Uu5ONpXI0M1mBc/7KlBxFuNsKcaof9dhVC3fH0Wx86J2cXOhz3V+gbNTW6TYSmXwjUK/TWIWWNBbzWiUvrQKyPdlZhzV+JBVwVmXRWYdpZjurMc9+mO57Q6z54Z6WM3N7jFzajsk4Esj7MpXKPQXyWBKjlQJQcrMd9TiYiHpeUCXSajRxFot2CqzYK79lLcsYlbSzHxnOZZdrBrUjrZzY0ZZ5m+yW0yLPQuMsX4FK5R6KsErfVWyJuvQKS7HHNdZfKGLBh1fIpfGm04/rcPpX/eTIrZ/eMlN27I1nSHRd+OeMp1FjJpik/hGoW+xeBCTznmvWUIdcnb6CxFoK0E3za4kHH2+pr4+/oWTNlLZNuCkPuozkImspFR4RqFvjIJlcmNj8rbt+CBqxT3HMW401Kkv6F4Y8kwtyZaLfo2GchCJrKRUeEahV4JSTDqtSDiLsFsZzGCbUW43VSAzF9H4o4ly/4m2bYX6QxkIZPWYwEZFa5R6C2VUKmES+RQsfwIixCwH8Z406G4I8n02MV8fZsMZCET2ciocI1Cj4QkGPUUI9xVhBnHYQRsBRhvNMcdSaZ9VrO+TQaykEnzFoOMCtco9ByR0BHMdxch7JLbOwql5BD8jXlxR5JpnzVP3yYDWchENjIqXKPglZCnSMJya2ehHD6EQKsZ/oumuCMxXz2Xg2vnc3C9NgcjtQcxcmHRN5Rj/+b3rouZ5Zl4XTH7rLn6NhnCrkKdiWxkVLhGwcuQ3NYtt3bK7dvl/2FrnlwgV0qvJfRoXQ7GJTPRZMLkZXlzciZoM+OefdF85meTLXmYaDbp2Zv1vED8PtpnPaifIQNZyKR5CuUCh592gQIJFUhYbu3Ml8OEMckFcpD+03BC36rPFngOmjDdloe5DjNCnWa9g+YzP2Nf0GbSs2PWp3f6GrL1Pp5hB5nIRkaFaxQ8EuqW23bJcKfcvs2EQEsu/NZs7PlhMKF99Vm423wQ92y5eODIQ8Rplg4zou583XzmZ3MdebhvN+nZMQGM1xWzryFL3yYDWcikdeeDjArXKLhzoHXlYN6VjXBHFmbsBxBo3g9/wz7sOdOX0L66fZhs2o/7rZkIObIw78zGgnSwi+YzP+P3ZmwH9Ky/fvlObpOBLGRiFxkVrlFw7YXm3Itox1sIt2VgpiUdgUt7MF63C7u/8ya0r3YnJht3Y/pyOkL2DMzLea1zsUu3PPOzWCez/gvLd3KbeZ4jE7vICGfGKwr5SaFje1BzbEe0fRsitm2Ybd6KwMUtGK/djF2n3Ak9dm4zpqxvYrppK8Kt2/Tz7JE+3Us7mR0/v3wnt5nnucc6E/9pEY5NmVrbG8GofSMiLRsx27QBQevruH3+Nez8xpnQ/n9eRaDhdcxc2oDw5Q3geekB2hfN58c7mb19bvlObjPPc6ozqLVvSvzH3adpx9cOJLKKPLPidcWsIqunHSftSGQVeWbF64pZRVJKKaWUXmilpf0H4j6PzDKh3aMAAAAASUVORK5CYII=" InformativeScreenshot="e14f0b1700b95849134c640c270214cd.png" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*'/&gt;" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

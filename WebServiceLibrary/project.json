@@ -1,0 +1,57 @@
+{
+  "name": "WebServiceLibrary",
+  "description": "to generate activities from web services:",
+  "main": "NewActivity.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "2.11.4",
+    "UiPath.Mail.Activities": "1.12.3",
+    "UiPath.System.Activities": "21.10.3",
+    "UiPath.UIAutomation.Activities": "21.10.4"
+  },
+  "webServices": [
+    {
+      "namespace": "SwaggerPetstore",
+      "serviceDocument": "Services\\SwaggerPetstore.json",
+      "webDocumentUri": "https://petstore.swagger.io/v2/swagger.json",
+      "uniqueReference": "kTqrgUsd1CEVEnVaDTGMpHbsXhk9o9GZA52AtGAZkTs="
+    }
+  ],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "21.10.4.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Library",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
