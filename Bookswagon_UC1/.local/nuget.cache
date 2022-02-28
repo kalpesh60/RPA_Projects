@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IHbkXGqNlSDqoejKytxjQ/E8FLQvkefrrLQBz8BE0uFgvywCkt9JTG0cjLjssbkTA3QJ1gt4PLPJISCkJvm7iA==",
+  "dgSpecHash": "Z8r13QAJa5SgoHKvlbeZdlfWAUgFNNM5nDLvYeRWdDe/ycQS0aHt/IVEP9TEkn16RSY5zqP8yYwk2T17Wf4ffQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kalpe\\OneDrive\\Documents\\UiPath\\Bookswagon_UC1\\.local\\",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\kalpe\\.nuget\\packages\\google.apis.peopleservice.v1\\1.43.0.1876\\google.apis.peopleservice.v1.1.43.0.1876.nupkg.sha512",
     "C:\\Users\\kalpe\\.nuget\\packages\\htmlagilitypack\\1.11.38\\htmlagilitypack.1.11.38.nupkg.sha512",
     "C:\\Users\\kalpe\\.nuget\\packages\\mailkit\\2.10.0\\mailkit.2.10.0.nupkg.sha512",
+    "C:\\Users\\kalpe\\.nuget\\packages\\microsoft.activities\\1.0.1\\microsoft.activities.1.0.1.nupkg.sha512",
     "C:\\Users\\kalpe\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.0\\microsoft.aspnet.signalr.client.2.4.0.nupkg.sha512",
     "C:\\Users\\kalpe\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.6\\microsoft.aspnetcore.connections.abstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\kalpe\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\3.1.6\\microsoft.aspnetcore.http.connections.client.3.1.6.nupkg.sha512",

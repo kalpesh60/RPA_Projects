@@ -3,6 +3,7 @@
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
+    "Microsoft.Activities": "[1.0.1]",
     "UiPath.Excel.Activities": "[2.12.0-preview]",
     "UiPath.Mail.Activities": "[1.13.1-preview]",
     "UiPath.System.Activities": "[21.12.0-preview]",

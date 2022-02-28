@@ -1,11 +1,10 @@
 {
-  "name": "PdfDataExtraction",
-  "description": "for doing the data extraction from pdfs",
+  "name": "DataTable Activities",
+  "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.3]",
-    "UiPath.PDF.Activities": "[3.5.0-preview]",
     "UiPath.System.Activities": "[21.10.4]",
     "UiPath.UIAutomation.Activities": "[21.10.5]"
   },
@@ -47,7 +46,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "7138b2b4-764f-4a61-bab1-bc5beb95d1c5",
+      "uniqueId": "c8d468f1-f752-452e-a316-b82f6a513656",
       "input": [],
       "output": []
     }

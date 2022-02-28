@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Login_To_Bookswagon" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="847.333333333333,1212.66666666667" sap2010:WorkflowViewState.IdRef="Login_To_Bookswagon_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_To_Bookswagon" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="588,480" sap2010:WorkflowViewState.IdRef="Login_To_Bookswagon_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -43,6 +43,7 @@
       <x:String>UiPath.Shared.ObjectLibrary</x:String>
       <x:String>UiPath.CV.Activities</x:String>
       <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -79,74 +80,125 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="570,1148" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="480.666666666667,415.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Login_To_Bookswagon" sap:VirtualizedContainerService.HintSize="528,1056" sap2010:WorkflowViewState.IdRef="Sequence_1">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:String" Default="https://www.bookswagon.com/login" Name="URL" />
-        <Variable x:TypeArguments="x:String" Default="browser" Name="text" />
-      </Sequence.Variables>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="486,964" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="f9204207-78c9-4152-a2b1-51bad0c9765a" Version="V1">
-        <uix:NApplicationCard.Body>
-          <ActivityAction x:TypeArguments="x:Object">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.666666666667,323.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Login_To_Bookswagon" sap:VirtualizedContainerService.HintSize="552,1552.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Default="https://www.bookswagon.com/login" Name="URL" />
+            <Variable x:TypeArguments="x:String" Default="browser" Name="text" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com" sap:VirtualizedContainerService.HintSize="510,1460.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f9204207-78c9-4152-a2b1-51bad0c9765a" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1242.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Name="LoginDT" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ReadRange AddHeaders="True" DataTable="[LoginDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="434,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\kalpe\Downloads\BookswagonCredentials.xlsx">
+                    <ui:ReadRange.Range>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:ReadRange.Range>
+                  </ui:ReadRange>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[LoginDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,1021.33333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,898" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your Email Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f9204207-78c9-4152-a2b1-51bad0c9765a" Text="[CurrentRow(&quot;username&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.bookswagon.com/login" DesignTimeRectangle="150, 589, 303, 40" ElementType="InputBox" FriendlyName="'INPUT ctl00_phBody_Sign…'" FullSelectorArgument="&lt;webctrl id='ctl00_phBody_SignIn_txtEmail' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_phBody_SignIn_txtEmail' tag='INPUT' type='text' class='new-txt-box' aaname='' /&gt;" Guid="c765d7fc-a948-4f41-9be1-4c2710ef2385" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATMAAAAsCAYAAAAJr1+kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAC4SURBVHhe7dTBCcAwEMCw7j9bdkpfCfTRAc5I4BX8bIAAMwMSzAxIuDNba0nSuI7PzAAmMTMgwcyABDMDEswMSDAzIMHMgAQzAxLMDEgwMyDBzIAEMwMSzAxIMDMgwcyABDMDEswMSDAzIMHMgAQzAxLMDEgwMyDBzIAEMwMSzAxIMDMgwcyABDMDEswMSDAzIMHMgAQzAxLMDEgwMyDBzIAEMwMSzAxIMDMg4XdmkjSt484MYK69Xxn+sYeuYMnIAAAAAElFTkSuQmCC" InformativeScreenshot="bf5e636353c532e3fcbe10ef5aad69a2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com' /&gt;" SearchSteps="FuzzySelector, Image">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="150, 564, 165, 22" ElementType="Text" FriendlyName="'Your Email Address'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' parentid='ctl00_phBody_SignIn_plnSignIn' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='ctl00_phBody_SignIn_plnSignIn' tag='DIV' class='lbl-width' aaname='                 Your Email Address:             ' check:text='Your Email Address:' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="f9204207-78c9-4152-a2b1-51bad0c9765a" Text="[CurrentRow(&quot;password&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.bookswagon.com/login" DesignTimeRectangle="150, 582, 303, 40" ElementType="InputBoxPassword" FriendlyName="'INPUT ctl00_phBody_Sign…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='new-txt-box' aaname='' /&gt;" Guid="288f81fe-1fbe-4f30-8a7c-f8a87cdf3b57" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATMAAAAsCAYAAAAJr1+kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAC4SURBVHhe7dTBCcAwEMCw7j9bdkpfCfTRAc5I4BX8bIAAMwMSzAxIuDNba0nSuI7PzAAmMTMgwcyABDMDEswMSDAzIMHMgAQzAxLMDEgwMyDBzIAEMwMSzAxIMDMgwcyABDMDEswMSDAzIMHMgAQzAxLMDEgwMyDBzIAEMwMSzAxIMDMgwcyABDMDEswMSDAzIMHMgAQzAxLMDEgwMyDBzIAEMwMSzAxIMDMg4XdmkjSt484MYK69Xxn+sYeuYMnIAAAAAElFTkSuQmCC" InformativeScreenshot="54a333d77ef9df3f563644c05f07c215.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com' /&gt;" SearchSteps="FuzzySelector, Image">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="150, 557, 165, 22" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' isleaf='1' parentid='ctl00_phBody_SignIn_plnSignIn' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='lbl-width' isleaf='1' parentid='ctl00_phBody_SignIn_plnSignIn' tag='DIV' aaname='                 Password:             ' check:text='Password:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKkAAAAaCAYAAADMi3z0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASDSURBVHhe7ZnvZyNbGMfvn5ZXhxJCWDrKHWVjafRF67JjX12GpaM0lo6ysaxcri4x902WMiyhDCEvVpfKi5Vlpa9KCSWE7z7nzDmTSTJ3J2W3M/T5EDrnV6fOJ895ntM/wDAlhyVlSg9LypQelpQpPSwpU3pYUqb0sKRM6WFJN2HQQqVSQWugn5lHZUnS4UlFbcbiI1DdPoT3cYTpXA96irCkhZIhqQ3nTQst+Tl2YNeE2iCxH2DyVEVlSQslQ9IWhvpZMZ8iOqlTu4Dbn+nGJwZLWij5kkq+dmDRJlnvx8DdEP6BhfrWSkoQUl+auxEC10ZVxONEzULjlY/+TX7/1VmV2hyEd3qs5C6EY94hRXRE80XqnedjhMeHyfuJmg23u5yuTLpN6msi+D7FqOvClmNP9ArzCaJTM5/+tl0H7ZNDtdaSpFrcZB7z29hM0i8+qrQhjQ8T4CaAQxvnvQ0QXkaILnvo/N2AoA11Lm7j8fdDtJ7RWlsNeN2QxkQIu224B3X4cqPz+iNPCdJKvcjskxtLsXuOhaZjdHaoze1DxXha19+m9ERYcN71aN0QwbF8twrqJNNUzTGSVmHJsfR76jsWrDP6ZSRosB+3VfddlfJ4rxZfJJa0GDY47s3G1dG+1m1rTHD+nOa+DGMRhi0lhhepznXy+tei5gx9t4LqXpMiOkXAJBrH45r/xV+O8b+2ek//i3pMmHyIpfQ/62clqYB1FC7l2bcfZcQUaHbpy5gm67hnSR+NnxdO7uLYs94sIhFmEwxV5KMItF1VwqkN26PiSvZrCW2KTpm3Ann9q9LPKfIKiqyDK/g1ktJIpNax0PkqH/Sc5+fxO6TRMlfPrtRjctwb2RW39GWk+TUf8agUnJMWSoak6Q8dhQcegkFq278HaKrjT/bJI7GNIOzBk8eukTSJvtQm6Fh9QenBPyFGOhvI7SdUXmpyzc+UbsifSeirU2r/q0dKyQjZSOWjJLJc7ygrPOs+LX22pHqMSR3SsKSFsllOmjBF+FKK1cT5N92kIOn2qN1IKplPMb4M0KZobNWNkBba5ijO61d5aRwlpbDitZaHhBGqqIpTgIVUv0jSrPksaaE8UNL/28gMSVeYXbdh01xBaUMWa/36iHYuhqo4cj/p+KaOfvlMRZI8+nU+Kt9BHfc7nVRhpdFrmbWzJf1JusCSFsoDJdXV9E4bo3QueRPCJWEWOWmAznWSwcbMI3hGlLx+RSy+2LWpWHLRv9fNsoh6TZGX2u0kH40xhVNrsLx2duG0Kqm5+rKX1pQRf3gq1+XCqSgeKKkRgeT5k/JIfUUjqKgRMk81kqoNlNc4lM+GEaIwgPdCHum68s7r18TS0LqmgNIk11Hp+1GJudra6ApqXVJ5vabybcqTm67+jxsVjmIrTkdY0mJ4sKQqsrxr6rtDWTz5iG7Gy8c9FUbDrodDk2vqAqxnomdev4FEkII5Fyvt9324cl5WkTMdobfpZf6qpMT0OoC7G99YJHOjjOOeJX00liRlmDLCkjKlhyVlSg9LypQelpQpOcAPyx+V+WGjQyQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                    <uix:Target DesignTimeRectangle="159, 561, 339, 166" FriendlyName="'chrome.exe Online'" ImageBase64="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" SearchSteps="Image" TargetType="ImageBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NClick ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f9204207-78c9-4152-a2b1-51bad0c9765a" Version="V1">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.bookswagon.com/login" DesignTimeRectangle="150, 596, 98, 53" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl id='ctl00_phBody_SignIn_btnLogin' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_phBody_SignIn_btnLogin' tag='INPUT' type='submit' class='btn-red' aaname='Login' check:text='Login' /&gt;" Guid="00608f16-89cd-4003-9ddd-1c5fa25005e5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAA5CAYAAADEB15AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAI9SURBVHhe7ZwxbsIwGIV7JpYehjPBHTgBYkfdCzdggEqIlQGhLgxuTfKc38Gkok3iR/o+6Q2kToL+L7+dMvjFCUokhhSJISUp5mM2c+/jsXt7fXXL0UjpIL62vsa+1ikiMZ/7/XVw6kJKd/E197W3RGIkJV987S1BjG+p1AlKf7HTWhCjbskf2zVBjBb6/PEOQBCTGqj0HyAxZAESQxYgMWQBEkMWIDFkARJDFiAxZAESQxYgMWQBEkMWIDFkAT2JmbtzeR93WrlNckyPmazcpfw6bjdPj8kUIDESU8IghjhAYsgC6MUcduV5gZM7TtJjl4ttOabgvBi5zfpUfio+X8fdmcqqexX3qN87nN9hALEYc06Cy3oajbcCLJfTb8Tco+GhaCmAVowtUvWkTt0x1NkUyRbabd2hvEZd1mNiquvY4/UHou0ATjFNb02Jv1kBceGsyMfERNNW0/dpOYBSTHJdCLHFLp7qqqC3U81f1hgcl5gyEiMxEvNca8x/FNMICnKnoNFxUzxbuFbeyiSmhi1I8znd/h8jMTVqBfnObcGrjqgnHltcyx6TGKJUYm6lMwYMQ0z0G5ntKNup9zuNKWAgHfPzVNn1TyltBQxqKqvWCMtzTGEIGPwa82wBEkMWIDFkARJDFiAxZAESQxYgMWQBEkMWIDFkARJDFhDEaGeM/EnujKG9ZPInuZeMdl/Kn+TuSx51Tb7YbvFEYrTDX574mjfu8Ad8S/nBeiHoLr62vsZ2+rIkxYjcOPcFXRuTrtPbQsAAAAAASUVORK5CYII=" InformativeScreenshot="cdfad66e7d45a6acf71d7baab349b97e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com' /&gt;" SearchSteps="FuzzySelector, Image" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;login successful&quot;]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACrSURBVDhPrZLRDYMwDESZpSPACp2FFViBFbpCVyirsAIrmDupRmfHSKD240m504ujBDoz+4myvENTLH0/gqngkV3SFBA/wE4Ysx8CgaQDeLLmLfshEN0gnQ84OicEAklPfIKX5Dn7IRBIZ2+wguYhQyCQdADX3Oh5A2FI2EwgVG/w9g5M3pNj4UD434DvWq9ABvXDZgJBByi8/6UfaQD8fIHsOWV5h7K8jnU7JE2aBaDl4+kAAAAASUVORK5CYII=" InformativeScreenshot="58b0622b69b4b7249992c7345eb4f07d.png" Selector="&lt;html app='chrome.exe' title='Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com'/&gt;" Url="https://www.bookswagon.com/login" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
             <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,669.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
-              <Sequence.Variables>
-                <Variable x:TypeArguments="sd:DataTable" Name="LoginDT" />
-              </Sequence.Variables>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:ReadRange AddHeaders="True" DataTable="[LoginDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="410,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\kalpe\Downloads\BookswagonCredentials.xlsx">
-                <ui:ReadRange.Range>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String" Value="" />
-                  </InArgument>
-                </ui:ReadRange.Range>
-              </ui:ReadRange>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[LoginDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,448" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-                <ui:ForEachRow.Body>
-                  <ActivityAction x:TypeArguments="sd:DataRow">
-                    <ActivityAction.Argument>
-                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                    </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,324.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[CurrentRow(&quot;username&quot;).ToString]" Version="V1" />
-                    </Sequence>
-                  </ActivityAction>
-                </ui:ForEachRow.Body>
-              </ui:ForEachRow>
-            </Sequence>
           </ActivityAction>
-        </uix:NApplicationCard.Body>
-        <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="0, 1020, 1920, 60" Arguments="[text]" FilePath="https://www.bookswagon.com/login" IconBase64="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" InformativeScreenshot="e14f0b1700b95849134c640c270214cd.png" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*'/&gt;" />
-        </uix:NApplicationCard.TargetApp>
-      </uix:NApplicationCard>
-    </Sequence>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;successful&quot;]" />
+      </TryCatch.Finally>
+    </TryCatch>
   </Sequence>
 </Activity>
