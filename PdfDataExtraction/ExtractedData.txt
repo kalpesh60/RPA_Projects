@@ -1,0 +1,103 @@
+Extracted text is: Installation :-
+
+- done by installation engineers
+
+- to install the product at a client‟s place for using after the software has been developed and tested.
+
+For ex, consider the example of a software to be developed and installed at Reliance petrol bunk.
+
+Maintenance :-
+
+- here as the customer uses the product, he finds certain bugs and defects and sends the product back for
+error correction and bug fixing.
+
+- bug fixing takes place
+
+- minor changes like adding, deleting or modifying any small feature in the software product
+
+100 % testing is not possible – because, the way testers test the product is different from the way customers
+use the product.
+
+Service – based companies and Product – based companies
+
+Service – based companies : -
+
+They provide service and develop software for other companies
+
+They provide software which is and specified as per the client company‟s requirement and never keep the
+code of the developed product and does not provide the software to any other company other than the
+client company.
+
+Ex – Wipro, Infosys, TCS, Accenture
+
+Product – based companies :-
+
+The develop software products and sell it to many companies which may need the software and make
+profits for themselves
+
+They are the sole owners of the product they develop and the code used and sell it to other companies
+which may need the software.
+
+Ex – Oracle, Microsoft
+
+Drawbacks of Waterfall Model :-
+
+In waterfall model, backtracking is not possible i.e, we cannot back and change requirements once the
+design stage is reached. Thus the requirements are freezed once the design of the software product is
+started. Change in requirements – leads to change in design – thus bugs enter the design – which leads to
+change in code which results in more bugs. Thus the requirements are freezed once the design of the
+product is started.
+
+Advantage of requirements freezing is we get a stable product because there is no change in design and
+code.
+
+3 | P a g e
+Drawback of requirements freezing – the customer may not be satisfied if the changes he requires is not
+incorporated in the product. The end result of waterfall model is not a flexible product.
+
+Major drawback of waterfall model – testing is a small phase which is done after coding. Requirement is
+not tested, design is not tested, if there is a bug in the requirement, it goes on till the end and leads to lot of
+re-work.
+
+Advantages of waterfall model – requirements do not change nor does design and code, so we get a stable
+product.
+
+Applications of waterfall model :-
+
+Used in – developing a simple application
+
+- for short term projects
+
+- whenever we are sure that the requirements will not change
+
+For ex, waterfall model can be used in developing a simple calculator as the functions of addition,
+subtraction etc and the numbers will not change for a long time.
+
+2 ) SPIRAL MODEL
+
+The spiral model is shown in the figure in the next page.
+
+Ra- requirements analysis of module A. Similarly with Rb, Rc, Rd.
+
+Da – design of module A. Similarly with Db, Dc, Dd
+
+Ca – coding of module A. Similarly with Cb, Cc, Cd
+
+Ta – testing of module A. Similarly with Tb, Tc, Td
+
+In Spiral model, the software product is developed in small modules. Let us consider the figure shown
+below in developing a s/w product X. X is built by integrating A,B,C and D.
+
+The module A – requirements of the module is collected first and then the module is designed. The coding
+of module A is done after which it is tested for defects and bugs.
+
+The module B – once module A has been built, we start the same process for module B. But while testing
+module B, we test for 3 conditions – a)test module B b)test integration of module B with A c)test module A.
+
+The module C – after building module A,B, we start the same process for module C. Here we test for the
+following conditions – 1) test module c, b, a 2) test for integration of C and B, C and A, A and B.
+
+And thus the cycle continues for different modules. Thus in the above example, module B can be built only
+after module A has been built correctly and similarly for module C.
+
+4 | P a g e

@@ -1,0 +1,121 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Demo" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="889.333333333333,814.666666666667" sap2010:WorkflowViewState.IdRef="Demo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="476,750" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="name">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">kalpesh</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com" sap:VirtualizedContainerService.HintSize="434,658" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7ad0d436-20a2-48bd-a9d0-543d31bc74c1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,440" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;application launched&quot;]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email or Mobile'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[name]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bookswagon.com/login" DesignTimeRectangle="194, 606, 600, 45" ElementType="InputBox" FriendlyName="'INPUT ctl00_phBody_Sign…'" FullSelectorArgument="&lt;webctrl id='ctl00_phBody_SignIn_txtEmail' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_phBody_SignIn_txtEmail' tag='INPUT' type='text' aaname='' /&gt;" Guid="8841ce61-e04e-4e80-be08-398e9efb7d33" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlwAAAAxCAYAAAAP6XcdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAETSURBVHhe7daxDYQwAMDAnzlzZqUIpC+gALq4u5O8g39rrUOSJEldhkuSJCnOcEmSJMVdwzXnlCRJ0sZehwsAgD0MFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBALBmuMcY/AAAMFwBAznABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMQMFwBAzHABAMSS4QIA4Ga4AABihgsAIGa4AABihgsAIGa4AABihgsAIGa4AABihgsAIGa4AABin8MlSZKkfT2GS5IkSUXrOAF6hDLogWvjtgAAAABJRU5ErkJggg==" InformativeScreenshot="065cd55fd6d11f096edfee05850067f7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="194, 573, 600, 25" ElementType="Text" FriendlyName="'Email or Mobile'" FullSelectorArgument="&lt;webctrl aaname='Email or Mobile:' parentid='ctl00_phBody_SignIn_plnLoginPassword' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email or Mobile:' parentid='ctl00_phBody_SignIn_plnLoginPassword' tag='LABEL' type='' check:text='Email or Mobile:' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAArzSURBVGhD7ZgJVBRXFoZRTI5RExAERSfuxjUuUdZudpulAXGB4BJU1CSOTo5bSNSYxLjEIOpAVFTCKhIcRdFxF3dxR4xKszQNEaOCEVFoYkZDuHNfdb3q6urXrUYzc86cuef8p6qru+p9/733vXpg8f/4X4hmGM52Nu4LhvRbuV4+NDvbV5Z3MsRXowoL0l4PV9afDPbRZA93O71O9s72Twb2iRlmay0n9/C3//fCu6O9MtZ5cNqlMQF3y8f4Q/kohV4jh0N5qC8vH9CM8NYLr10c4Vsd4zgg1cPeJoB/3H8unNrZyHf6u58rDw8EDpxotJ+hAWpCMOKjNxLCK9iLO2Z7OZ8ZZmMl4x//50XX11v3SvFx3VsRroSKsABOZuGFCjCqQA1w8uQ+J8qG7O7S6rUe/HAvN7w72QddDVc+qAgLRHAiHp4aeB4T4gpQA0EeoFF6wBWlV+1Lb6sP+veK1owNadTDiwwQcFYVDNrHRAUEE2iAmkCpg70ap/TsMocf/sVimfPgTRURQVCB/c6Jh39qC1ETrApQA0IFDKtAtXhQ33U8xh+Lqb27RZcSQAovMWDQQix4wYBuAhtVwQy8JtAdypTuENXzzdk8zvOFu71t8JVRisZihCkbQ4ApPMPEM1XAxCokNiA2gQaI1EGejXK7tn481rOFbZuWXXOVXg8L8MGFod5QioAaYkJUAYPsm6qAAK8zwIZHUXhqgIcvC5RzuhIgr+3cqmV3Hu/p4TMj8MTBADlcCPKEqzhoEcKoRyuErBtlX2qAto9ggpF9zgQ/ecUVYJkIkMEmp4E5PJ75aNmng7xn5ocQPSMETihlkI8Pu44DF4/0BQ0BpZkXwzNMqBG8aIQPqDh5gwqBBWHWVZgcokIEFoTAgjCBhQhe6O+mO6KGWlvJeUzT0WVp2Lnume+Da8Ik2IIPOaPEEoZ4QSFClJCMik1IwEvGYKt9tRBu7t4Bd1WFUFN157famurG+z+p4PblHVC+ex4Ur3cBdcIw0GxwhIpNw+BGoiNUJjnBrVRHuJXmBHcyHKFqsyPcy3SEmqxhULvNCbQ7nEG70xlOrR58kcdkR6uBnQMJPFXU/DGwWyGD80HucA2zRjKqDuVNiMA1qLLF8+FesQrq6urMquZWEVQenAs3Mlzgp+9d4FaWC9z5hyun6h2ucD/HDer2usGjgzL412E5PM6Vw5MjeDwqgydH5RDgYhPI4xqHw3TfNALebYtO/VOnQvwoL9jvL+daqRArUYqtQYCpgTI8VmYkC4BFlfWQcKge/pqshfD4BgiLa4DpeL7+YD0U3agXflddkAi3s2VQlSOD2n1y+OWwOzw+7gm/n+aVhzqDOos6hzqPuuAJSYv6JPG4hkG2t103RFZTeKrQZRGwY7gLHMEevIKVUKEJNc4Hmv2bGSkcUO3DOlh7UAuhqxsgZJWhgmMbIAhFjvH7tXD/gc7EQ1UyQnojpDc0nfOBpvN4PI/HCz4AF30BLqHy8fwyHonwvOqwZxVzK96ydwdZ1y3TQCxq4vMpfrAXTZzwl2EreUAxtlLZqOFQsWShAD8/SwsjEJ6IZYCaUK5sgOhMvYlH1xZA0yUFNOUrEBJVQDVcdERRE5d9wOXtN1x4bH3YRDiv6JIxFYikJjziI2G7jxMcVrhAHk5ssnqQF1xNSTEHsfaA1giaioKLRUzEYSW4Ktwtgsb8QIT044GlEhsg1fCBpTO7L+Wx9WH3N++t1ABL0+eMgH9iFY75ucIFNKHhs096nrTN0zIvhicKQqn4OfFItQghiQGpCWN4oszlAzJ5bH04LAo+xQKnGpQYBclKVzikcIXTuDZX7s3hBicT1hS4KXiqtQf4Sf3jLgRlVcCwdaiOf/fOcR5bHx1jw8s6Z0wBIik8vR7xZRjs9XWEkwo3Yckkq43UAJXYgBg8MEan97/TtVEdttHv+Sayz5nQwxOV5riW8tj6eDNpolYKTEWvd0ufAivHe0OurzP27l1ucLJMmoKm4GIDBJyej1rToDNQWw2/XZTAC5kXS2dAm+eh5bH10Tkxsl4KzpIidhzs8XaEByID4pahkmZdLFoBxepbsOL0UZBvToBB62eDRcxnnMi5Z+JH8PecCVCRhxNclH2i+lPu9Ty2PtrHjla/uTkKzImamDs9EH4u0bUQeUlJwc1lnhw9Y25Bp5itAvDTNGnz+wZGSnNcjFvI7jPlSRa0WH/hNTQhEkr27OQMkDcshRaLgks1JOYytIhZwgQ1J6vVn8LOA2PQgDcc2zjYeBK3neG5lQKaktjImvTlnAGyPRBnXgov7vkBMWeZcM+jlD3vQsayfsbL6Bvh73wtBabqlD6Zk/jaW6lRcKOk+FdigmwPzGWdmHj7JcBTjZ3nvo3H1scrvezdKOizqGP6JIg6EsdVgWwLyPaABU7kgT3PbJtvFkLzlYs4kXN6rRkeLVd+Lnw2uId8t/Tjeou2Vl15dF2QDVL7+IhqAiaVKQNEcQW6FxoxQbYH5A0rNdAxJssIQgBb+jFYLEHx15oRM8s/BYsvcVUSmRLuo3o3JI1H14f1VFmyGFwqB17i807pUWhiF2eCiGwP1u6v515SI3GdJ0ul0eAokmWLpdEQuXc7RO3bwRlpEYtZRzN9k+Ig7tIZsPt2OVh8PZ95PydpFV7t7+AvhqOSGpCqQ9pEiMqNg+t3ygUjVF+fPsIc3JJk+otZkPtjGeTd/JHLuOWKBWC16guo/fURpF6/jK0SDc0Z9wqSOxn/y6XdwoA8MRiR9LNU7dMiOXXePAWmHYmH71XH4NptDdy5/zO4pCcwB+fAEHp7yXXYrykBy8VzuIqcu30Tjt+s4L5rhoa437NaiOjD907w2Pp4tZedrEMqG9SUEWqAyp47TsSqTQbLVdjPjMFpBXapVbBbXQQWsydB0tV8uPdLA7TG75ph63BtZgqeaNbUKzy2YbT9yGuXFJIFSkWAWbJLfY89MIozgFnPKroKJffvQULBeWh4/Bi6bojlKsFNZnPwVKywtHu9h/26iFoWLEtSaHp8FgOZqh+gsu4BbCksgEdPnoATabkl8wyXVnMyFWRC26eMbzQFKhaFFZ8TtUudAM1jn7GFZk2Eb/PPwuPG38AhfhlYLPsEW+gpJmZN+4HHZUcrRd85UlixxLBiaPF5izXzmIPTSZzNTeJSsPxqLreEHqusAFXNXc6AsIQ+zySWxusTHNfZp7KBCaAUmMg2Ra9Wa6czB6cVOFShhlP8qmP5zQJog++Cuw1a2FdeCq/gC625uQqwllFWtBzee3a7pHGNpsApLIUXG7HeGMkcnKsA9vqnJw7C56dyweKreQYvsgPlanDevAErgRNacq8g6YvMXLTo38HPNj68lsKJJTVgkzJer40R4Jc003hwmlkE5MRfE7YSpKXob1hVYG0lnhbN7dp0t5rpscs2ebxBpiksNULVNnkc+KSEQ/mZUHiD9T5AsOY4UdmbObzGfza4h2jxvIfPlX1ptOhh62o9X5Fnm8zIOKptyjhO1okRUH52JPdX1M4DYcYgYjiRAeEa6zNR/7dG8igvFq/0c/BvM9El2XZVaJUNVkVswDp5LMzMjoCmAkWT7k9Bb+6PESOY59XQgZP54V9ekK04qcprowYub/2BW5ZVtO9J68VKdf4uRVXNUbm2cJuTOnfDoJPpS/pmRcx13477eS0TzpxI27yszL9wkP4lk5AFyhL57Yv0/J8WBIqs5eSFRN6qFJick2vkO7PgFhb/BguiphZuYw4oAAAAAElFTkSuQmCC" InformativeScreenshot="6a81ff430d0fda5c5b41bfa6da6e3d7e.png" Selector="&lt;html app='chrome.exe' title='Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com'/&gt;" Url="https://www.bookswagon.com/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

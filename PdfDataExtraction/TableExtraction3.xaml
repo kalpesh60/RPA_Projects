@@ -1,0 +1,119 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TableExtraction3" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="588,824.666666666667" sap2010:WorkflowViewState.IdRef="TableExtraction3_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TableExtraction3" sap:VirtualizedContainerService.HintSize="552,760" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="510,668" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2daf176d-3e80-4321-8977-2f8c376659a9" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,450" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Book name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Book src Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Written by'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Publisher'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='New column 4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' text='Ships within' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="434,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.bookswagon.com/view-books/5/award-winners" DesignTimeRectangle="1212, 841, 398, 22" ElementType="Text" FriendlyName="'International Edition'" FullSelectorArgument="&lt;webctrl aaname='International Edition' parentid='listSearchResult' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='International Edition' parentid='listSearchResult' tag='DIV' type='' check:text='International Edition' /&gt;" Guid="d67a5147-f822-435d-a00b-f75b87ba9f36" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Award Winning Books | Award Winning Novels | Best Award Winning Books' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1211, 512, 396, 28" ElementType="Text" FriendlyName="'International Edition'" FullSelectorArgument="&lt;webctrl aaname='International Edition' parentid='listSearchResult' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='International Edition' parentid='listSearchResult' tag='DIV' type='' check:text='International Edition' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="509, 450, 1275, 5351" FriendlyName="'1. 12%'" FullSelectorArgument="&lt;webctrl id='listSearchResult' tag='DIV' /&gt;" Guid="1199d5b8-44ad-43b4-b113-8fbdeaf3ab4c" InformativeScreenshot="7d49d21e64a8b968841ab1827a9eeb6a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Award Winning Books | Award Winning Novels | Best Award Winning Books' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="T1.csv" sap:VirtualizedContainerService.HintSize="434,156.666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="25d2dad5e5119f557c1ce2ddb4d408ae.png" Selector="&lt;html app='chrome.exe' title='Award Winning Books | Award Winning Novels | Best Award Winning Books'/&gt;" Url="https://www.bookswagon.com/view-books/5/award-winners" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

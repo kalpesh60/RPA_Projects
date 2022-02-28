@@ -1,0 +1,119 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="screenscrapping" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="889.333333333333,690.666666666667" sap2010:WorkflowViewState.IdRef="screenscrapping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="screenscrapping" sap:VirtualizedContainerService.HintSize="476,626" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Mobile Price List | Compare Mobiles on Buy Online @ Flipkart" sap:VirtualizedContainerService.HintSize="434,534" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2edcbd7d-a60b-45d6-81ec-aa23c9ea005c" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,316" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:FindOCRText Element="{x:Null}" Text="{x:Null}" DisplayName="Find OCR Text Position 'DIV'" sap:VirtualizedContainerService.HintSize="334,222.666666666667" sap2010:WorkflowViewState.IdRef="FindOCRText_1" Occurrence="1">
+              <ui:FindOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="auto" Profile="Screen" Scale="1" Timeout="100000" />
+                </ActivityFunc>
+              </ui:FindOCRText.OCREngine>
+              <ui:FindOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a1ea517e-0c16-49b5-a9a3-5d2bca04b794" InformativeScreenshot="6784cb270e4cc76e810117db13019210" Selector="&lt;webctrl aaname='realme Narzo 30 (Racing Silver, 64 GB)' parentid='container' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:FindOCRText.Target>
+            </ui:FindOCRText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a98c677d21ff8d6c786defd1966a206a.png" Selector="&lt;html app='chrome.exe' title='Mobile Price List | Compare Mobiles on Buy Online @ Flipkart'/&gt;" Url="https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&amp;p%5B%5D=facets.brand%255B%255D%3Drealme&amp;p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&amp;param=7564&amp;otracker=clp_metro_expandable_1_3.metroExpandable.METRO_EXPANDABLE_Shop%2BNow_mobile-phones-store_Q1PDG4YW86MF_wp3&amp;fm=neo%2Fmerchandising&amp;iid=M_a00b628e-2ab2-4a3d-bec1-c5fbec99e1ff_3.Q1PDG4YW86MF&amp;ppt=hp&amp;ppn=homepage&amp;ssid=vji5rk03v40000001645204660564&amp;page=2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

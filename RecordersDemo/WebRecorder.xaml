@@ -1,0 +1,115 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WebRecorder" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="583.333333333333,1208" sap2010:WorkflowViewState.IdRef="WebRecorder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="WebRecorder" sap:VirtualizedContainerService.HintSize="476,1143.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Facebook – log in or sign up" sap:VirtualizedContainerService.HintSize="434,1051.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8725e92f-3768-4dc8-aa5f-73dac9dece96" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,833.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="kalpesh" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.facebook.com/" DesignTimeRectangle="1118, 387, 546, 78" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="90a77a42-dd9e-46ac-a8bb-25b21a0a79a1" ImageBase64="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" InformativeScreenshot="c045a3aaf28c291c3e19282e36018a5d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Facebook – log in or sign up' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT pass'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" Text="1234567" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.facebook.com/" DesignTimeRectangle="1143, 506, 450, 33" ElementType="InputBoxPassword" FriendlyName="'INPUT pass'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='' /&gt;" Guid="cae2774b-d166-4fb4-ad87-b7fd1114f8c5" ImageBase64="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" InformativeScreenshot="aecca56275519f4acb427c9a692f4813.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Facebook – log in or sign up' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.facebook.com/" DesignTimeRectangle="1118, 585, 546, 72" ElementType="Button" FriendlyName="'Log In'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Log In' check:text='Log In' /&gt;" Guid="bf1c9d5a-c5a7-489b-9be4-bcf83ec0741a" ImageBase64="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" InformativeScreenshot="a485604b28173f346ab3d2947d668071.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Facebook – log in or sign up' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQlSURBVFhHrZXdU1NXFMUPmA8gEDEQCD75wNgHxv4beepf0UpbKlQZpWNbOxhrsba1Hzbphzpai1rU1nY67UsfMtNpJ28dpzM+0CdJgGBQQrw3GgK5u3ufe07uuckhhrRr5jdrT/Y+ayE4wJrVyD3wDf0I0b13ID50B5Lo80M/gEHw2f4sTjd0K579d+37BSJ7v4dE5DYUIrctcHGr4jgyWHULbysJeitidq7hX8GPYbHIXMUcnNsCzneK8xnLpGuIzFkmZVCWiG1O+25CBINTAzcwHCHXcn3TcR1iR1mUKeIba+A6PB+e3cqEZzEAkW7P5aqrs9wPXFMc4W+FU+bgLBwQNXqF8asMf7uZ6f9mA4jw1XLVdag3uvu6PWZTh6hzi35O4SvlVP8VPJZcLjnOkTP5Bgxi6Mxfm/DPugWlLQvKFQsKGxZkDAvurlbEW0TJow7t/wk8jPVdKoGLi08dV2f0566V4M9sBRrJzhHvFKhL1NoKX4ZI/8WS2XcBjxsQ+trx39JbomZ71b9/ImeTOkU9Y31fPU2EvnwCexDpNkXFi2JXhBd+KomKxpL35OrM87CTl4/cBF8oUSzsSeCHTXJrflNUNJburYQ6qZuFvjCjvedN4HyuOJ8Nx5X5bq7+23/1Xhn2XyqKW7rTUJMfOm9G2e5PjTgCzdAr3CxbotbR/gsYqtyps3yvIc52f/w4iUAzBM/ZrlPwXIHvHa9HzSB6PzGSLPjR4/ngh/gI6VFch9zpJDN2BHaz4AfrRs/ZddDyvuLKrJPrdrv3NVA3C57JG91n8sCZUVyhFS2sV6BHZJGrs8ztmckbrPu9/Hzg9Bro6D6d596K/lgo1+UF3lUcoW4WOLWWDJx6BERXzHGVVnTj75IrU89aknVNP4wj0IhWdPb3Yl1Op+JijrPAyUfRzhOrwHlHcYVWNPGzId5jWU2ehLrZyDT4uk48LHS+vQodb+VAug6508neyzv3TG7PTgd1Ujf/e9D55mqi4/gD6DiOh1XPgV/M5Co60Tv73rlTP6vdUycvJwWmcxHf1Irpn1oBdCBXZ3J11sn/xgP7Rrh6r8kzqVPU2+qYysZ8R3F5NIuQ67B3Onn5Llt1zjHxhhzhO5qxS9Q6Gv4M/N7JbMo7uQzeI9swiQXoOvnETrp9r3h1zqaoS9S6FTiGP4rDyxnP60vQCJ3oc+/h5aqrs3xH2dQh6vTyHVk54JlYynjGl2DXoUWQrs468Ztx+457LROLGcoWNY0VGMtFPGOLqV1jGXDxGgah66TuuSt4Di2mnvkvr9XwOPjxi4i1v5ox21/JgE2au05tfJeuOgffUgZlididi74b7aPpRNvoQqFtFAsOLohKt3CP4J785XSB3tBbEfM/CH9reQ6mo+zF+3HR6RJ76X6Sdoxu5G+4Z4qxfwFy1lO9ksIzlAAAAABJRU5ErkJggg==" InformativeScreenshot="c41417b608886967e884ea8348043b99.png" Selector="&lt;html app='chrome.exe' title='Facebook – log in or sign up'/&gt;" Url="https://www.facebook.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

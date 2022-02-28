@@ -1,0 +1,414 @@
+Robotic Process Automation  Basics
+Contents:
+
+● Graphical User Interface (GUI)
+● Recorder
+● Self-learning Bots
+● Possible Activities of Self-Learning Bots
+● Types of RPA - Attended, Unattended, Hybrid
+● ROI: Building a Business Case
+● ROI for RPA
+● Velocity
+● Productivity
+● Implementing RPA in Your Enterprise
+● Key Drivers of RPA in Enterprise
+● Steps to Enterprise RPA
+● List of Robotic Process Automation Tools
+● and Selection Checklist
+● Comparing RPA Tools
+● Understanding RPA Vendors
+● RPA Case Study
+Graphical User Interface (GUI) :
+A GUI (graphical user interface) is a system of interactive visual
+components for computer software. A GUI displays objects that convey
+information, and represent actions that can be taken by the user. The
+objects change color, size, or visibility when the user interacts with them.
+GUI is an interface that allows users to interact with different electronic
+devices using icons and other visual indicators. The graphical user
+interfaces were created because command line interfaces were quite
+complicated and it was difficult to learn all the commands in it.
+GUI objects include icons,  cursors and buttons. These graphical elements
+are sometimes enhanced with sounds, or visual effects like transparency.
+The below diagram provides the position of the graphical user interface
+with respect to the computer system −
+
+2) Recorder :What a process recorder in RPA does is to follow the steps that a user
+performs and translates them into an automation-ready workflow designed to
+replicate those actions.
+
+Recorder In Automation Anywhere:
+Use the Screen Recorder to record a task or series of actions on your
+computer.
+To record a task or a series of actions on your computer, use the Screen
+
+Recorder when:
+
+● Building simple tasks for processes that involve mouse clicks and
+keyboard operations.
+● You plan to run the automated process (the recorded task) on the
+same computer on which it was recorded. This ensures that the
+screen display coordinates are the same as they were when the task
+was recorded.
+
+Hi, there are mainly 3 types of recorders in Automation Anywhere:
+1. Screen Recorder:​ It is most suitable for desktop applications.The
+Screen Recorder or the other Standard Recorder provides the easiest
+way to create a simple automation process. It is usually used when
+the task involves many ​mouse clicks and ​keyboard operations ​
+2. Smart Recorder:​ Suitable for both Web and Desktop applications.
+The Smart Recorder or the Object Recorder is the most ​feasible
+method for building tasks. It is ideal for desktop applications andcaptures objects such as drop-down menus, list boxes, radio buttons,
+check boxes and mouse clicks.
+3. Web Recorder:​ Used only for Web applications. The Web-Recorder
+is used to perform tasks that require repetitive actions such as
+Extracting data from multiple web pages, Extracting data from tables
+on the web pages or Filling web forms.
+4. Task Editor:​ The task editor is used to process any command with
+the help of several commands. This editor allows you to open multiple
+tasks by editing them simultaneously. The task editor has
+components such as Commands panel, Task Actions List, Action
+Buttons, Error View and Variable Manager Panel, Filters.
+
+Recording in UiPath:​About the differences and similarities between the
+types of recorders:
+
+○ Basic​ – generates a full selector for each activity and no
+container, the resulting workflow is slower than one that uses
+containers and is suitable for single activities.
+○ Desktop​ – suitable for all types of desktop apps and multiple
+actions; it is faster than the Basic recorder, and generates a
+container (with the selector of the top level window) in which
+activities are enclosed, and partial selectors for each activity.
+○ Web​ – designed for recording in web apps and browsers
+(supported: Internet Explorer, Google Chrome), generates
+containers and uses the ​Simulate Type/Click ​input method by
+default.
+○ Citrix​ – used to record virtualized environments (VNC, virtual
+machines, Citrix, etc.) or SAP, permits only image, text and
+keyboard automation, and requires explicit positioning.
+Self-learning Bots :
+
+What Is Artificial Intelligence?
+Artificial intelligence​ (AI) refers to the simulation of human ​intelligence​ in
+machines that are programmed to think like humans and mimic their actions.
+The term may also be applied to any machine that exhibits traits associated
+with a human mind such as learning and problem-solving.
+
+Technologies like ​Robotic Process Automation (RPA)​ include intelligent
+automation using real-time self-learning techniques like predictive analytics
+and cognitive computing. It encompasses Artificial intelligence, machine
+learning and speech recognition, thereby creating what can be called as
+self-learning bots. The breakthrough technology is expected to simplify and
+digitize major business processes, and also increase self-learning capabilities.
+
+How Does a Bot Work?
+
+A cognitive bot learns by observing people at work. It is achieved by
+constantly and repeatedly analyzing the processes, corrections and
+transactions of the employer by the bot. The bot thus gains the knowledge to
+process the incoming data by thinking and performing the suitable action,
+getting smarter and becoming more accurate over time. It automatically
+extracts the data needed for decision making and continuously learns from the
+employer’s feedback. It uses NLP, ML, knowledge representation, reasoning,
+massive parallel computation and Rapid Domain Adaptation.
+
+Advantages of Bots :● Bots increase productivity
+● Produce accurate and high-quality results
+● Rarely makes mistakes and are reliable
+● Work 24 hours without fatigue and breaks
+● A greater quantity of work in lesser time
+
+4) Possible Activities of Self-Learning Bots :
+
+To create a self-learning bot, one should go beyond basic AI and progress into
+Machine Learning. Machine Learning uses algorithms to process incoming
+data, learn about it, and then determine what to do with it. After Machine
+Learning, the next step is to move into Deep Learning (DL), a more advanced
+version of Machine Learning. Deep Learning breaks down the language in
+ways that make ‘human-level’ chatbot conversation seem possible. In this
+phase, neural networks come into the act and use it to progressively conclude
+on a single probability of accuracy. As an example, the final output of a neural
+net might be: “This input is 90% likely to be a support request”.
+
+Image: 1, for manual process and Image: 2, for RPA Process.Types of RPA - Attended, Unattended, Hybrid :
+
+What is RPA?
+
+Robotic Process Automation (RPA) is an application software with (AI)
+artificial intelligence and machine learning capabilities to manage
+high-volume, repeatable tasks that earlier required humans to perform.
+
+RPA is not a one-size-fits-all solution. In fact, currently there are three forms
+of RPA:  Attended, Unattended and a new hybrid.
+
+i) Attended RPA :
+
+Attended automation is like having your own personal coach. The robot
+works alongside you, the human worker, offering processing assistance. An
+employee can have the robot "show me" how to do a task or process, or
+ask the robot to "do it for me."
+
+For example, you may want new hires to leverage the "show me" option as
+they learn a new process. But once they understand how it works, they
+could have the robot do the process step for them.
+
+Such steps might include:
+
+● Cross-application data population
+● Data gathering from multiple sources● Conducting a preliminary analysis of data and presenting the
+employee with insights for better decision making.
+
+Attended automations can also prevent employees from performing tasks,
+such as approving loans above their authorization credentials.
+
+ii)​  Unattended RPA : ​
+Robots run unattended in virtual environments and can automate any
+number of processes. On top of the Attended Robot capabilities, the
+Orchestrator is responsible for remote execution, monitoring, scheduling
+and providing support for work queues.
+
+iii) ​Hybrid RPA :
+Hybrid automation combines attended and unattended RPA and enables
+the passing of work to robots automatically or by employee prompt,
+allowing the robot and employee to work on different tasks simultaneously.
+This ability to move work back and forth between the robots and employee
+works especially well for processes that have:
+
+● Both structured and unstructured data
+● Key "decisioning" touch points
+● Multiple variations or outcomes.
+
+The knowledge worker is needed to make judgment calls based on the
+context and data available. They can also use creative thinking to identify
+new, innovative ways of working.
+
+ROI: Building a Business Case And ROI for RPA :Robotic Process Automation, or RPA, is autonomous software programmed to
+follow rule-based tasks just as a human would. The difference is that robotic
+decision making and outcomes are predictable, consistent, and 100 percent
+accurate.
+Companies exploring RPA find it difficult to establish ROI because traditional
+measures often do not justify the deployment cost, according to Institute for
+Robotic Process Automation and Artificial Intelligence Program Director
+Christopher Surdak. While the organization estimates RPA deployments bring
+20 percent to 25 percent cost savings, on average, there’s more to measure
+than the just the financial impact
+
+Here are four metrics to measure the full ROI of an RPA deployment:
+Velocity —​ Measure the start time versus stop time of a back-office process
+before and after an RPA deployment and compare
+Productivity — ​Measure the length of time human workers spent on a task
+versus how quickly robots complete that same task
+Quality —​ Measure output accuracy before and after RPA deployment — it
+should be 100 percent after
+Compliance —​ Measure compliance before and after RPA deployment — it
+should be 100 percent after
+
+Implementing RPA in Your Enterprise
+What is Enterprise RPA:
+Enterprise RPA is a specialist software and services business dedicated to
+delivering the best Robotic Process Automation, Artificial Intelligence andDigital Assistant solutions for our customers. This allows them to devote more
+time to serving customers or perform other higher-value work.
+
+Through best practices such as creating implementation roadmaps, project
+plans with cross functional dependencies, templates for documenting
+automation opportunities and defining the acceptance plan for the RPA
+solution being implemented, experienced resources like Baker Tilly can set
+your organization up for success. This allows you to better understand the
+automation technology and find additional areas of their business where this
+technology can create efficiencies.
+The common challenges faced by companies during RPA implementations
+often seem daunting and it can be difficult to tackle these hurdles alone.
+
+In the figure below, the horizontal axis represents the complexity and
+importance of an automated process. The vertical axis shows the technical
+knowledge of the people who will implement that automated process, ranging
+from nontechnical business users at the bottom to very technical IT staff at the
+top.
+All three approaches—API-based automation, simple RPA, and enterprise
+RPA—have value, and so it’s important to make good choices about which
+one to use in each situation.
+Business processes that are a good fit for enterprise RPA tend to have these
+characteristics: The automated process needs to be scalable, reliable, secure,
+and manageable. In other words, the automation must be built on a solid
+technical foundation; your IT organization needs to be comfortable with it.
+Automating the process has business value, but typically not enough to justify
+the cost of API-based automation. As a result, the process would never rise to
+the top of your IT organization’s to-do list. Even though IT must be involved,
+control of the automated processes needs to remain with the business. This
+might be because the process changes frequently, and involving IT in every
+change would be too slow, or for some other reason. Yet once IT has laid the
+groundwork, business people must be able to create and change these
+process automations on their own.
+8) Key Drivers of RPA in Enterprise
+RPA helps companies automate a set of highly manual processes.The beauty
+of RPA, and why companies like it so much, is that it enables customers tobring a level of automation to legacy processes without having to rip and
+replace the legacy systems.
+The ability to integrate legacy systems is the key driver for RPA projects. By
+using this technology, organizations can quickly accelerate their digital
+transformation initiatives, while unlocking the value associated with past
+technology investments.
+
+9) Steps to Enterprise RPA
+
+● Project preparation. The early stage of a RPA project is a critical time.
+...
+● Use case identification and automation potential. Identify and
+prioritize potential use cases for automation. ...
+● Business case development. ...
+● RPA preparation. ...
+● RPA implementation.
+
+10) List of Robotic Process Automation Tools and
+Selection Checklist
+
+Blue Prism Automation Ui Path Work Fusion
+Anywhere
+
+OpenSpan Visual Cron Synt Bots Softomotive
+Leo Robotic Kofax Kapow Jidoka Jacada
+Process
+Automation
+
+IPsoft FoxBots Contextor Celaton
+
+eyeShare A2iA Arago Cicero
+Automation
+
+Criteria for selecting the right RPA tool
+
+In order to select the best RPA tool, the necessary guidelines for choosing
+the right RPA tool.
+
+1. Ease of Implementation
+2. Ease of use
+3. Speed
+4. Technical Features
+5. Ownership Cost
+6. Scalability
+7. Architecture
+8. Exception handling
+9. Vendor support10. Governance
+One should carefully consider the above criteria and even factors such as
+total cost of ownership, training for employees and others before selecting
+the right RPA tool for their automation. Each tool has a specific purpose
+and to evaluate the full potential of an RPA tool, you will need to prioritize
+one or more criteria over the others and choose the one which closely
+matches your requirements.
+
+Comparing RPA Tools
+RPA Tools Comparison: UiPath vs Blue Prism vs Automation Anywhere
+
+UIPath Blue Prism Automation Anywhere
+
+Has Community Edition /
+Free Edition
+Has recently launched a
+free edition.
+Recently launched a
+Community Edition
+
+Most Popular Tool
+Popular than
+Automation Anywhere
+Less Popular than others
+
+No programming
+knowledge required
+It provides functionality
+that allows the user to
+write code, but users
+can manage without it.
+No programming
+knowledge required
+
+Has free online training
+and certification
+programs
+Provides official
+certification program
+Recently launched a
+certification of 50$.
+
+Provides desktop, web
+and Citrix automation
+Designed for Citrix
+automation for BPO.
+Reasonable across all
+mediumUnderstanding RPA Vendors
+Several companies are leaders in the RPA industry. But, there are dozens
+(if not hundreds) of companies that have now entered the market. Here are
+the top 10 industry leaders:
+1. UiPath (whose revenue grew 629 percent from 2017 to 2018)
+2. Automation Anywhere, Inc.
+3. Blue Prism Group
+4. NICE
+5. Pegasystems
+6. Kofax
+7. NTT-AT
+8. EdgeVerve Systems
+9. OpenConnect
+Other RPA software vendors include the following:
+● AutomationEdge
+● Be Informed B.V.
+● OpenSpan
+● Jacada
+● Kryon Systems
+● Softomotive
+● Ipsoft
+● Another Monday
+● LINX
+● WinAutomationTypes of RPA Vendors
+You can categorize RPA vendors in various ways. Some companies focus
+specifically on RPA solutions; others are more established, having offered
+other technology services before offering RPA. Here are the four main
+categories:
+● Established Technology Providers: These are companies that
+began decades ago by offering other technology services and that
+have evolved to now include RPA services.
+● First Wave of RPA Vendors: These are companies that were
+established in the early 2000s.
+● Second Wave of RPA Vendors: These are companies that were
+founded in the 2010s.
+● Business Process Outsourcing Providers: These are third parties
+that perform payroll, human resources, accounting, and other
+such services for organizations.
+
+RPA Case Study
+These tasks can combine queries, calculations and maintenance of records
+and transactions. RPA is a software program that can imitate human
+actions, which are highly repetitive, rule-based manual tasks that uses
+structured data.
+
+The main goal of Robotics process automation is to replace repetitive and
+boring clerical tasks performed by humans with a virtual workforce. RPA
+does not require the development of code, nor does it require direct access
+to the code or database of the applications.RPA can be used to automate workflow, infrastructure, back office
+processes which are labor intensive. These software bots can interact with
+an in-house application, website, user portal, etc. The RPA is a software
+program which runs on an end user's pc, laptop or mobile device. It is a
+sequence of commands which are executed by Bots under some defined
+set of business rules.
+
+RPA tools perform automation of business processes.
+
+RPA Tools
+There are 30 plus RPA tools in the market.
+
+3 Most popular tools :
+1. Automation Anywhere
+2. BluePrism
+3. UiPath
+Automation Anywhere is most popular
+UI Path there is community version which is available as free for learning
+As per Forrester Wave 2017 Q1​[1]​ report, the following are the top 5 RPA
+tools:
+
+● Automation Anywhere
+● UiPath
+● NICE
+● BluePrism
+● EdgeVerve
+
+Prerequisites to Learn RPA
+
+● Basic Programming paradigm/ concepts(coding skills not that much needed)
